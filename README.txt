@@ -7,7 +7,7 @@ code and datasets for paper 'TED: Generating Consistent and Diverse Essays from 
 2)Zhihu dataset: in /public_datasets/zhihu
 
 2.train/eval/test code for models:
-1)generative commonsense reasoning task: in /TED/Commongen_code
-2)topic-to-essay generation task: in /TED/ZHIHU_code
+1)generative commonsense reasoning task: in /Commongen_code
+2)topic-to-essay generation task: in /ZHIHU_code
 
 For model configuration, parameter settings, command usage, etc., see the readme under the subfolder.
