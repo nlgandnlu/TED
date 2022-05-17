@@ -19,10 +19,10 @@ code for paper 'TED: Generating Consistent and Diverse Essays from User Specifie
 2.dataset path is default in finetune_lm.py, it is not need to edit.
 first stage for fine-tune:  
 
-deepspeed --num_nodes 1 --num_gpus 1 finetune_lm.py --log_name finetune_large_stage1 --seq_len 300 --epochs 1 --batch_size 1 --lr 5e-5 --device_ids 0 --pretrained_path models/mega-clue-tok/checkpoint/ --freeze_body  
+deepspeed --num_nodes 1 --num_gpus 1 finetune_lm.py --log_name finetune_large_stage1 --seq_len 300 --epochs 2 --batch_size 12 --lr 5e-5 --device_ids 0 --pretrained_path models/mega-clue-tok/checkpoint/ --freeze_body  
 
 second stage for fine-tune:  
-deepspeed --num_nodes 1 --num_gpus 1 finetune_lm.py --log_name finetune_large_stage2 --seq_len 300 --epochs 1 --batch_size 1 --lr 6e-5 --device_ids 0 --pretrained_path models/finetune_large_stage1_epoch_1
+deepspeed --num_nodes 1 --num_gpus 1 finetune_lm.py --log_name finetune_large_stage2 --seq_len 300 --epochs 1 --batch_size 4 --lr 5e-6 --device_ids 0 --pretrained_path models/finetune_large_stage1_epoch_1
 
 
 
